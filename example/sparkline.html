@@ -8,7 +8,7 @@
       body { background-color: #ccc; font-family: Georgia; font-size: 0.8em; }
       ul { list-style-type: none; }
       li { background-color: #fff; width: 230px; margin-top: 1em; }
-      
+
       /* Background colours can be set using the parent element */
       #spark_2 { background-color: #ccffcc;}
     </style>
@@ -19,8 +19,8 @@
       <li id="spark_2"></li>
     </ul>
   </body>
-  <script src="../vendor/jquery-1.2.6.js" type="text/javascript" charset="utf-8"></script>
-  <script src="../vendor/raphael-0.5.4b.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../vendor/jquery-1.3.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../vendor/raphael.js" type="text/javascript" charset="utf-8"></script>
   <script src="../lib/js/leonardo-graph-sparkline.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" charset="utf-8">
     $(function () {
@@ -28,8 +28,8 @@
       var data_2 = [0, 2, 6, 10, 12, 3, 0, 5, 14, 5, 10, 16, 9, 5, 22, 5, 5, 37, 30, 41, 40, 31, 10];
       new Leonardo.Sparkline('spark_1', 200, 30, data_1);
       new Leonardo.Sparkline('spark_2', 200, 30, data_2, {
-				sparkColour: '#333',
-				addHover: true
+        sparkColour: '#333',
+        addHover: true
       });
     });
   </script>
