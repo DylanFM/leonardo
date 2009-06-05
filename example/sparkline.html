@@ -30,11 +30,8 @@
       new Leonardo.Sparkline('spark_2', 200, 30, data_2, {
 				sparkColour: '#333',
 				onmouseover: function(graph,x,y) {
-					var circle = null;
-					return function() {
-						circle = graph.circle(x,y,3).attr({stroke: "none", fill: "#ff0000"});
-						setTimeout(function() {circle.remove();},500);
-					};
+					var circle = graph.circle(x,y,3).attr({stroke: "none", fill: "#ff0000"});
+					setTimeout(function() {circle.remove();},500);
         }
       });
     });
